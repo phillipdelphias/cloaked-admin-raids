@@ -1,0 +1,92 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloaked Admin</title>
+  <link rel="stylesheet" href="cloakedadmin.css">
+</head>
+
+<script src="script.js"></script>
+
+<div class="dashboard-container" style="display: flex; gap: 100x;">
+  <!-- Left Column -->
+  <div class="left-column">
+    <section>
+      <h3>Select Guild</h3>
+      <div class="guild-selection">
+        <select name="Select Guild" id="selectGuildDropdown"></select>
+        <button id="selectGuildBtn">Load commands</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Commands</h2>
+
+      <div class="command-section">
+        <h4>Give Role</h4>
+        <select name="userToRole" id="roleUserDropdown"></select>
+        <select name="roleSelect" id="selectRoleDropdown"></select>
+        <button id="assignRoleBtn">Assign Role</button>
+      </div>
+
+      <div class="command-section">
+        <h4>Ban User</h4>
+        <select name="userToBan" id="banUserDropdown"></select>
+        <button id="banUserBtn">Ban User</button>
+      </div>
+    </section>
+  
+
+  
+  
+    <section>
+      <h2>More Commands</h2>
+
+      <div class="command-section">
+        <h4>Kick User</h4>
+        <select name="userToKick" id="kickUserDropdown"></select>
+        <button id="kickUserBtn">Kick User</button>
+      </div>
+
+      <div class="command-section">
+        <h4>Unban User</h4>
+        <textarea name="username" id="unbanUserInput" placeholder="Username to unban:"></textarea>
+        <button id="unbanUserBtn">Unban User</button>
+      </div>
+
+      <div class="command-section">
+        <h4>Create Cloaked Admin</h4>
+        <textarea name="cloakedadmintextbox" placeholder="Type the admin name here." id="ca_inputbox"></textarea>
+        <button id="ca_button">Create admin.</button>
+      </div>
+
+      <div class="command-section">
+        <h4>Timeout member</h4>
+        <select name="users" id="timeoutusers"></select>
+        <textarea name="timeout_time" id="timeoutseconds" placeholder="Input time you want to timeout (in seconds)"></textarea>
+        <button id="to_button">Timeout User</button>
+      </div>
+    </section>
+    
+    
+    <div class="Info" style="display: flex; gap: 10px;">
+      <h5 id="logininfo">Logged in as a bot</h5>
+      <h5 id="servercount">This bot is in a server?</h5>
+    </div>
+    
+    <h5 id="ownership">Created by itsprobablyjackson on Discord</h5>
+  
+</div>
+
+<div class="right-column">
+  <h3>Chat</h3>
+  <div class="chat-frame" id="chat-frame">
+   
+  </div>
+  
+</div>
+
+
+
+
+
+

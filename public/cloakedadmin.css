@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #fafafa;
+  padding: 15px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align content horizontally */
+}
+
+#ownership {
+  color: aqua;
+}
+
+.chat-frame {
+  background-color: black;
+  border-color: #292c2e;
+  border: 2px solid #818181;
+  border-radius: 15px;       /* Curved corners */
+  padding: 20px;             /* Spacing inside the frame */
+  width: 500px;              /* Set a specific width */
+  height: 50%;
+  display: flex;               /* Enable flexbox */
+  flex-direction: column;      /* Stack the messages vertically */
+  justify-content: flex-end;   /* Align the items to the bottom */
+  overflow-y: auto;     
+}
+
+.chat-frame h5 {
+  margin: 0;                   /* Removes default margin of <h5> */
+}
+
+/* Headings */
+h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+/* Form Elements: Select, Button, Textarea */
+select,
+button,
+textarea {
+  width: 100%; /* Flexible width for responsiveness */
+  max-width: 300px; /* Limit the max width */
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+  background-color: #292c2e;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover Effects for Form Elements */
+button:hover,
+select:hover,
+textarea:hover {
+  background-color: #303438;
+}
+
+/* Command Section Styling */
+.command-section {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on smaller screens */
+  gap: 10px;
+  width: 100%; /* Take full width */
+  max-width: 1000px; /* Limit the section width */
+  margin-bottom: 20px;
+}
+
+/* Responsive Layout for Larger Screens */
+@media (min-width: 600px) {
+  .command-section {
+    flex-direction: row; /* Arrange elements in a row on larger screens */
+    align-items: center;
+  }
+
+  select,
+  button,
+  textarea {
+    width: 25%; /* Restore the original 25% width on larger screens */
+    min-width: 150px;
+  }
+}
+
+/* Button Styling */
+button {
+  cursor: pointer;
+}
